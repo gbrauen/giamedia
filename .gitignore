@@ -1,0 +1,28 @@
+# See also the .gitignore file inside /web
+
+# Ignore dependencies that are managed with Composer.
+# Generally you should only ignore the root vendor directory. It's important
+# that core/assets/vendor and any other vendor directories within contrib or
+# custom module, theme, etc., are not ignored unless you purposely do so.
+/vendor/
+
+# scaffold files --- see web/.gitignore as well.
+/.gitattributes
+/.editorconfig
+
+# IDE configs
+/.buildpath
+/.project
+/.settings/**
+/.vscode/**
+
+# backups folder -- ignore everything except the README in there.
+/backups/**
+!/backups/README.txt
+
+# backups folder -- ignore everything except the .htaccess in there.
+/private/**
+!/private/.htaccess
+
+# bin - mostly version controlled but not the fix permissions script
+/bin/file_perms_fix.sh

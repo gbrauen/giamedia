@@ -1,0 +1,23 @@
+uuid: 4cc5c733-5eac-42e2-81d9-d54767d1b6c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - mappy
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: mappy_search
+theme: mappy
+region: sidebar_first
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility: {  }

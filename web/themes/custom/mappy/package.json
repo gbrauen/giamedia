@@ -1,0 +1,19 @@
+{
+  "name": "mappy_leaflet_spin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Leaflet.Spin-1.1.2/leaflet.spin.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^5.0.0",
+    "@rollup/pluginutils": "^3.1.0",
+    "rollup": "^2.18.0",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

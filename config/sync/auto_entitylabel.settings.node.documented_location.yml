@@ -1,0 +1,6 @@
+status: 1
+pattern: '[node:field_da_reference:entity:field_dauid]: [node:field_numericid:value] [node:summary]'
+escape: false
+dependencies:
+  config:
+    - node.type.documented_location

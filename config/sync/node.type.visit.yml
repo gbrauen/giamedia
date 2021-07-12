@@ -1,0 +1,18 @@
+uuid: 899f05be-ccc5-4893-ac1b-aff63cef5d7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Visit
+type: visit
+description: 'On the land mapping visit. Reflection and media from a site visit.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

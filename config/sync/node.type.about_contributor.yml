@@ -1,0 +1,18 @@
+uuid: 0a832f10-586a-4c69-8268-da57a9059053
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'About Contributor'
+type: about_contributor
+description: 'Tell us about yourself. To maintain anonymity as discussed in class, this content type will automatically show the username of the contributor but you do not have to provide your name.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

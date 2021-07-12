@@ -1,0 +1,27 @@
+uuid: 3cb3961a-b0d4-4e2b-bd49-f4d4a56d683b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_s_
+    - node.type.visit
+  module:
+    - file
+id: node.visit.field_file_s_
+field_name: field_file_s_
+entity_type: node
+bundle: visit
+label: File(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: '20 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

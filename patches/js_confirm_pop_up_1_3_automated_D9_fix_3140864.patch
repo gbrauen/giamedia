@@ -1,0 +1,11 @@
+diff --git a/js_confirm_pop_up.info.yml b/js_confirm_pop_up.info.yml
+index 6207cd6..2d24b36 100644
+--- a/js_confirm_pop_up.info.yml
++++ b/js_confirm_pop_up.info.yml
+@@ -6,5 +6,6 @@ type: module
+ # Information added by Drupal.org packaging script on 2018-11-21
+ version: '8.x-1.3'
+ core: '8.x'
++core_version_requirement: ^8 || ^9
+ project: 'js_confirm_pop_up'
+ datestamp: 1542785584

@@ -1,0 +1,33 @@
+uuid: 5a775a0d-b449-4a7f-b45c-083a0f992232
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.anonymous-user-account-menu
+  module:
+    - system
+    - user
+  theme:
+    - mappy
+id: anonymoususeraccountmenu
+theme: mappy
+region: secondary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:anonymous-user-account-menu'
+settings:
+  id: 'system_menu_block:anonymous-user-account-menu'
+  label: 'Anonymous User Account Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

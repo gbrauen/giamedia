@@ -1,0 +1,27 @@
+uuid: fd45a8e4-ba35-488c-ae4f-9ffd72fe15b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio
+    - node.type.visit
+  module:
+    - file
+id: node.visit.field_audio
+field_name: field_audio
+entity_type: node
+bundle: visit
+label: Audio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp3 aac'
+  max_filesize: '25 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

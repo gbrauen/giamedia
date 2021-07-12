@@ -1,0 +1,18 @@
+uuid: 8ca0fc94-4d98-4f37-931d-29961d3b0e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.about_contributor
+id: node.about_contributor.title
+field_name: title
+entity_type: node
+bundle: about_contributor
+label: 'Contributor''s username'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

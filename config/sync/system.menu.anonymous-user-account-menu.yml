@@ -1,0 +1,8 @@
+uuid: 661de032-320c-4df8-99e4-57b72bcf69d7
+langcode: en
+status: true
+dependencies: {  }
+id: anonymous-user-account-menu
+label: 'Anonymous User Account Menu'
+description: 'This menu will be available only for anonymous users'
+locked: false

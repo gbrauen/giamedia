@@ -1,0 +1,14 @@
+uuid: 0b8d5fb1-9919-462e-8507-455673afa675
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.instructor
+  module:
+    - user
+id: user_remove_role_action.instructor
+label: 'Remove the Instructor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: instructor

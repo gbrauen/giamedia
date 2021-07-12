@@ -1,0 +1,11 @@
+# mappy.info.yml
+name: Mappy (based on Bartik)
+version: 0.0.1
+type: theme
+description: 'D8 theme adding leaflet map block and scripts.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bartik
+logo: logo.svg
+libraries:
+  - mappy/global-styling

@@ -1,0 +1,23 @@
+uuid: f6a8c8f6-9c6f-44a4-ba52-f1dbe3f760fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.about_contributor
+  module:
+    - text
+id: node.about_contributor.body
+field_name: body
+entity_type: node
+bundle: about_contributor
+label: 'About Me'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

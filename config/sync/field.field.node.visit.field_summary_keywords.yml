@@ -1,0 +1,29 @@
+uuid: 163db229-b447-47b1-a9d5-fc83561b5882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary_keywords
+    - node.type.visit
+    - taxonomy.vocabulary.tags
+id: node.visit.field_summary_keywords
+field_name: field_summary_keywords
+entity_type: node
+bundle: visit
+label: Keyword(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

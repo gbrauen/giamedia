@@ -1,0 +1,8 @@
+uuid: 84320a82-987f-4865-a3be-b6aa82b80f7f
+langcode: en
+status: true
+dependencies: {  }
+id: geodrupal-overview
+label: 'GeoDrupal Overview'
+description: 'Menu of articles providing an overview of this project and site'
+locked: false

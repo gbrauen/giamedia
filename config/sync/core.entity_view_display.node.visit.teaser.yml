@@ -1,0 +1,58 @@
+uuid: 05151153-e154-4c25-b633-7b069d067c55
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.visit.body
+    - field.field.node.visit.field_audio
+    - field.field.node.visit.field_comments
+    - field.field.node.visit.field_date
+    - field.field.node.visit.field_file_s_
+    - field.field.node.visit.field_location
+    - field.field.node.visit.field_location_indication_type
+    - field.field.node.visit.field_photos
+    - field.field.node.visit.field_summary_keywords
+    - field.field.node.visit.field_video
+    - image.style.thumbnail
+    - node.type.visit
+  module:
+    - image
+    - text
+    - user
+id: node.visit.teaser
+targetEntityType: node
+bundle: visit
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    region: content
+  field_photos:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_audio: true
+  field_comments: true
+  field_date: true
+  field_file_s_: true
+  field_location: true
+  field_location_indication_type: true
+  field_summary_keywords: true
+  field_video: true

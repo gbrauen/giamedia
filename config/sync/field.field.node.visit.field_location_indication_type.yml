@@ -1,0 +1,29 @@
+uuid: 14d8d913-f17a-4e83-918d-24dcde2e2c52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_indication_type
+    - node.type.visit
+    - taxonomy.vocabulary.location_indication_type
+id: node.visit.field_location_indication_type
+field_name: field_location_indication_type
+entity_type: node
+bundle: visit
+label: 'Location indication type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location_indication_type: location_indication_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

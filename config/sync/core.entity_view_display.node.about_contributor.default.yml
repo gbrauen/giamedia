@@ -1,0 +1,28 @@
+uuid: 70a0dfd2-7c9d-4677-9f63-b390167f9650
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_contributor.body
+    - node.type.about_contributor
+  module:
+    - text
+    - user
+id: node.about_contributor.default
+targetEntityType: node
+bundle: about_contributor
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

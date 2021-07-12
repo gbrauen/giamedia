@@ -1,0 +1,40 @@
+uuid: 1851439b-8ed6-4075-a4f7-98e2df058d40
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:73bd889b-52cc-4296-9c38-39b7fb00738c'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - mappy
+id: mapblock2
+theme: mappy
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:73bd889b-52cc-4296-9c38-39b7fb00738c'
+settings:
+  id: 'block_content:73bd889b-52cc-4296-9c38-39b7fb00738c'
+  label: 'My visits'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user/*\r\n"
+    negate: false
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      instructor: instructor
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

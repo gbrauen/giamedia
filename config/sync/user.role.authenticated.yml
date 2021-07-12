@@ -1,0 +1,51 @@
+uuid: 707a6f68-17a7-4b7a-a6e3-ae678fac0f21
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: Student
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'change own username'
+  - 'create about_contributor content'
+  - 'create documented_location content'
+  - 'create visit content'
+  - 'delete about_contributor revisions'
+  - 'delete documented_location revisions'
+  - 'delete own about_contributor content'
+  - 'delete own documented_location content'
+  - 'delete own visit content'
+  - 'delete visit revisions'
+  - 'edit own about_contributor content'
+  - 'edit own article content'
+  - 'edit own documented_location content'
+  - 'edit own page content'
+  - 'edit own visit content'
+  - 'post comments'
+  - 'publish editable node type about_contributor'
+  - 'publish editable node type visit'
+  - 'publish own node type about_contributor'
+  - 'publish own node type visit'
+  - 'revert about_contributor revisions'
+  - 'revert documented_location revisions'
+  - 'revert visit revisions'
+  - 'search content'
+  - 'skip comment approval'
+  - 'unpublish editable node type about_contributor'
+  - 'unpublish editable node type visit'
+  - 'unpublish own node type about_contributor'
+  - 'unpublish own node type visit'
+  - 'use text format basic_html'
+  - 'view about_contributor revisions'
+  - 'view documented_location revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view visit revisions'

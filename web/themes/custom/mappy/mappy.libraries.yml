@@ -1,0 +1,57 @@
+# mappy.libraries.yml
+global-styling:
+  css:
+    theme:
+      css/global_styling.css: {}
+  
+mapblock1:
+  css:
+    theme:
+      css/mapblock1.css: {}
+  js:
+    js/mapblock1.js: {}
+  dependencies:
+    - mappy/leaflet
+    - mappy/leafletmarkercluster
+    - mappy/mapblock_common
+
+mapblock2:
+  css:
+    theme:
+      css/mapblock2.css: {}
+  js:
+    js/mapblock2.js: {}
+  dependencies:
+    - mappy/leaflet
+    - mappy/leafletmarkercluster
+    - mappy/mapblock_common
+
+mapblock_common:
+  css:
+    theme:
+      css/mapblock_common.css: {}
+  js:
+    js/mapblock_common.js: {}
+    
+leaflet:
+  css:
+    theme:
+      Leaflet-1.6.0/leaflet.css: {}
+      spin/spin.css: {}
+  js:
+    Leaflet-1.6.0/leaflet.js: {}
+    leaflet.geojson.bbox/leaflet.geojson.bbox_bundle.js: {}
+    spin/spin_bundle.js: {}
+    js/spin_glue.js: {}
+    Leaflet.Spin-1.1.2/leaflet_spin_bundle.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+
+leafletmarkercluster:
+  css:
+    theme:
+      Leaflet.markercluster-1.4.1/dist/MarkerCluster.css: {}
+      Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css: {}
+  js:
+    Leaflet.markercluster-1.4.1/dist/leaflet.markercluster.js: {}

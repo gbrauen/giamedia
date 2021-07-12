@@ -1,0 +1,96 @@
+uuid: ebc96d46-7107-4e3a-8ab1-d0b4b9498a2e
+langcode: en
+status: true
+dependencies: {  }
+id: documented_location_import
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: geo_imports
+label: 'Import Documented Locations'
+source:
+  constants:
+    dest_path: 'private://example_download_location_images/'
+    uid: 1
+  plugin: csv
+  path: /home/glenn/Desktop/DA_housingDensity_Evidence/dl_csv_export.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  ids:
+    - dauid
+    - refnum
+  fields:
+    -
+      name: refnum
+      label: 'Reference Number'
+    -
+      name: evtype
+      label: 'Evidence Type'
+    -
+      name: summary
+      label: Summary
+    -
+      name: dauid
+      label: DAUID
+    -
+      name: daobjid
+      label: 'DA Object ID'
+    -
+      name: wkt
+      label: WKT
+    -
+      name: description
+      label: Description
+    -
+      name: path
+      label: Path
+    -
+      name: img
+      label: 'Image File Name'
+    -
+      name: comb_img
+      label: 'Combined Image File Names'
+process:
+  uid: constants/uid
+  field_numericid: refnum
+  field_da_reference:
+    plugin: migration_lookup
+    migration: dissemination_area_wkt_import
+    source: daobjid
+  field_description: description
+  field_location:
+    plugin: geofield_wkt
+    source: wkt
+  field_short_description: summary
+  field_evidence_types:
+    -
+      plugin: explode
+      delimiter: ', '
+      source: evtype
+    -
+      plugin: migration_lookup
+      migration: documented_location_evidence_types_import
+      no_stud: true
+  field_photos:
+    -
+      plugin: explode
+      delimiter: '|'
+      limit: 10
+      source: comb_img
+    -
+      plugin: image_import
+      destination: constants/dest_path
+      alt: '@field_short_description'
+      reuse: true
+      move: false
+  type:
+    plugin: default_value
+    default_value: documented_location
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - dissemination_area_wkt_import
+    - documented_location_evidence_types_import

@@ -1,0 +1,22 @@
+uuid: 4d921ee1-3ec4-4aeb-b825-1da7e164afd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.visit
+id: node.visit.status
+field_name: status
+entity_type: node
+bundle: visit
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

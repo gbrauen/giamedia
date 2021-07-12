@@ -1,0 +1,21 @@
+uuid: ba6ca193-a651-469f-bc14-da430f31354a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.visit
+  module:
+    - datetime
+id: node.visit.field_date
+field_name: field_date
+entity_type: node
+bundle: visit
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

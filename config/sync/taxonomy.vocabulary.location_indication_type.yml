@@ -1,0 +1,8 @@
+uuid: 023b8367-4d4b-4cf4-834a-b5a7279d6fbc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location indication type'
+vid: location_indication_type
+description: 'How accurately does the specified location reflect where a visit or event occurred?'
+weight: 0

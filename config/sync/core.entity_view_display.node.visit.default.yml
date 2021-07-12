@@ -1,0 +1,210 @@
+uuid: e8433135-bea7-4254-ab1f-ee0ac5d00b41
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.visit.body
+    - field.field.node.visit.field_audio
+    - field.field.node.visit.field_comments
+    - field.field.node.visit.field_date
+    - field.field.node.visit.field_file_s_
+    - field.field.node.visit.field_location
+    - field.field.node.visit.field_location_indication_type
+    - field.field.node.visit.field_photos
+    - field.field.node.visit.field_summary_keywords
+    - field.field.node.visit.field_video
+    - node.type.visit
+  module:
+    - audiofield
+    - comment
+    - datetime
+    - file
+    - image
+    - leaflet
+    - text
+    - user
+    - video
+id: node.visit.default
+targetEntityType: node
+bundle: visit
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_audio:
+    weight: 9
+    label: hidden
+    settings:
+      audio_player: default_mp3_player
+      audio_player_jplayer_theme: none
+      audio_player_wavesurfer_combine_files: false
+      audio_player_wavesurfer_audiorate: 1
+      audio_player_wavesurfer_autocenter: true
+      audio_player_wavesurfer_bargap: 0
+      audio_player_wavesurfer_barheight: 1
+      audio_player_wavesurfer_barwidth: null
+      audio_player_wavesurfer_cursorcolor: '#333'
+      audio_player_wavesurfer_cursorwidth: 1
+      audio_player_wavesurfer_forcedecode: false
+      audio_player_wavesurfer_normalize: false
+      audio_player_wavesurfer_progresscolor: '#555'
+      audio_player_wavesurfer_responsive: false
+      audio_player_wavesurfer_wavecolor: '#999'
+      audio_player_wordpress_combine_files: false
+      audio_player_wordpress_animation: true
+      audio_player_soundmanager_theme: default
+      audio_player_initial_volume: 8
+      audio_player_autoplay: false
+      audio_player_lazyload: false
+      download_button: false
+      download_link: false
+      audio_player_wavesurfer_playnexttrack: true
+      audio_player_wavesurfer_use_peakfile: false
+    third_party_settings: {  }
+    type: audiofield_audioplayer
+    region: content
+  field_comments:
+    weight: 11
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  field_date:
+    type: datetime_custom
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: 'M. d, Y '
+    third_party_settings: {  }
+  field_file_s_:
+    weight: 6
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_location:
+    weight: 10
+    label: hidden
+    settings:
+      multiple_map: false
+      popup_content: ''
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: true
+      disable_wheel: true
+      fullscreen_control: true
+      reset_map:
+        position: topright
+        control: false
+      map_position:
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+        force: false
+      weight: ''
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+        iconSize:
+          x: ''
+          'y': ''
+        iconAnchor:
+          x: ''
+          'y': ''
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: ''
+          'y': ''
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
+      popup: false
+      gesture_handling: false
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
+  field_location_indication_type:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_photos:
+    type: image
+    weight: 7
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_summary_keywords:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_video:
+    weight: 8
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      controls: true
+      autoplay: false
+      loop: false
+      muted: false
+      preload: none
+    third_party_settings: {  }
+    type: video_player
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

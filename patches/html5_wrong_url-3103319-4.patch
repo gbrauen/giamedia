@@ -1,0 +1,13 @@
+diff --git a/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php b/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php
+index 2b7a480..ffbaf2a 100644
+--- a/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php
++++ b/src/Plugin/Field/FieldFormatter/VideoPlayerFormatter.php
+@@ -172,7 +172,7 @@ class VideoPlayerFormatter extends VideoPlayerFormatterBase implements Container
+       $relative_url = file_url_transform_relative(file_create_url($video_uri));
+       $elements[$delta] = [
+         '#theme' => 'video_player_formatter',
+-        '#items' => [Url::fromUserInput($relative_url)],
++        '#items' => [$relative_url],
+         '#player_attributes' => $this->getSettings(),
+       ];
+     }

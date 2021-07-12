@@ -1,0 +1,27 @@
+uuid: e139f4d0-2ada-48ac-be07-0a28e3092d2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mappy
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: mappy_content
+theme: mappy
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

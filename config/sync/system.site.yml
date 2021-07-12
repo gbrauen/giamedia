@@ -1,0 +1,15 @@
+uuid: ce00e991-0d84-4772-b8ea-f4c6df9c20b2
+name: 'Geographic Information Annotation and Media (GIAMedia): demo'
+mail: YOUREMAIL@DOMAIN.TLD
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/9
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: NOTIFICATIONEMAIL@DOMAIN.TLD
