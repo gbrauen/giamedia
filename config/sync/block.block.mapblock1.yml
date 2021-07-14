@@ -1,9 +1,9 @@
-uuid: b2cb1fb7-81d6-4ec0-bfed-7a21c82ab4ef
+uuid: 713c3def-c698-463d-82ab-41afa3e2bf0f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:5bee1a15-0b3d-4ccf-9a76-c58a876369ee'
+    - 'block_content:basic:22fbe41a-ae2c-436e-b087-a9451a5e82f4'
   module:
     - block_content
     - system
@@ -14,10 +14,10 @@ theme: mappy
 region: content
 weight: -8
 provider: null
-plugin: 'block_content:5bee1a15-0b3d-4ccf-9a76-c58a876369ee'
+plugin: 'block_content:22fbe41a-ae2c-436e-b087-a9451a5e82f4'
 settings:
-  id: 'block_content:5bee1a15-0b3d-4ccf-9a76-c58a876369ee'
-  label: 'Map block 1'
+  id: 'block_content:22fbe41a-ae2c-436e-b087-a9451a5e82f4'
+  label: mapblock1
   provider: block_content
   label_display: '0'
   status: true
@@ -28,4 +28,3 @@ visibility:
     id: request_path
     pages: "<front>\r\n/user/*/my-visits"
     negate: false
-    context_mapping: {  }

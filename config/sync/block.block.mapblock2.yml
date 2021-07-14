@@ -2,10 +2,7 @@ uuid: 1851439b-8ed6-4075-a4f7-98e2df058d40
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:73bd889b-52cc-4296-9c38-39b7fb00738c'
   module:
-    - block_content
     - system
     - user
   theme:
@@ -13,7 +10,7 @@ dependencies:
 id: mapblock2
 theme: mappy
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: 'block_content:73bd889b-52cc-4296-9c38-39b7fb00738c'
 settings:

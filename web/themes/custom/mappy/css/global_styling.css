@@ -1,8 +1,8 @@
 .region-secondary-menu {
     float: right;
 }
-.site-branding__logo img {
-    height: 64px;
+.site-branding__name {
+    font-size: 1.4em;
 }
 .field {
   clear: left;
@@ -19,6 +19,6 @@
     margin-right: 0.75em;
 }
 .site-branding__logo img {
-    height: 64px;
-    width: 64px;
+    height: 80px;
+    width: 80px;
 }

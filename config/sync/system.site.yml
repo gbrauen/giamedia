@@ -1,11 +1,11 @@
-uuid: ce00e991-0d84-4772-b8ea-f4c6df9c20b2
+uuid: d04ebf85-ddb9-455b-ae1f-37e0375a4c37
 name: 'Geographic Information Annotation and Media (GIAMedia): demo'
 mail: YOUREMAIL@DOMAIN.TLD
-slogan: ''
+slogan: 'Collaborative geographic information and media collection and mapping'
 page:
   403: ''
   404: ''
-  front: /node/9
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
