@@ -1,8 +1,11 @@
-uuid: 1851439b-8ed6-4075-a4f7-98e2df058d40
+uuid: 058f56f7-21cc-4a60-8a66-7df9121745ff
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:18b39a92-0bb9-4b2a-8602-762b76aa3b7f'
   module:
+    - block_content
     - system
     - user
   theme:
@@ -10,12 +13,12 @@ dependencies:
 id: mapblock2
 theme: mappy
 region: content
-weight: -3
+weight: 0
 provider: null
-plugin: 'block_content:73bd889b-52cc-4296-9c38-39b7fb00738c'
+plugin: 'block_content:18b39a92-0bb9-4b2a-8602-762b76aa3b7f'
 settings:
-  id: 'block_content:73bd889b-52cc-4296-9c38-39b7fb00738c'
-  label: 'My visits'
+  id: 'block_content:18b39a92-0bb9-4b2a-8602-762b76aa3b7f'
+  label: 'My Locations'
   provider: block_content
   label_display: visible
   status: true
@@ -24,7 +27,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/user/*\r\n"
+    pages: '/user/*'
     negate: false
   user_role:
     id: user_role
