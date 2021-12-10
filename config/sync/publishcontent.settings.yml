@@ -1,6 +1,6 @@
-ui_localtask: false
-ui_checkbox: true
 _core:
   default_config_hash: CSLsGbxp3SlqyxyFdo_ySU0CldlmJux5IKpG9zYn4V0
+ui_localtask: false
+ui_checkbox: true
 publish_text_value: Publish
 unpublish_text_value: Unpublish

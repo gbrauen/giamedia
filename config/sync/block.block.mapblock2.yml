@@ -19,22 +19,22 @@ plugin: 'block_content:18b39a92-0bb9-4b2a-8602-762b76aa3b7f'
 settings:
   id: 'block_content:18b39a92-0bb9-4b2a-8602-762b76aa3b7f'
   label: 'My Locations'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*'
     negate: false
+    pages: '/user/*'
   user_role:
     id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
     roles:
       authenticated: authenticated
       instructor: instructor
       administrator: administrator
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

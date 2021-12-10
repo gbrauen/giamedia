@@ -18,16 +18,16 @@ plugin: 'system_menu_block:anonymous-user-account-menu'
 settings:
   id: 'system_menu_block:anonymous-user-account-menu'
   label: 'Anonymous User Account Menu'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   user_role:
     id: user_role
-    roles:
-      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

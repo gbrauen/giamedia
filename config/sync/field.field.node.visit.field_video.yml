@@ -18,9 +18,9 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_extensions: ''
-  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
-  max_filesize: ''
   handler: 'default:file'
   handler_settings: {  }
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: ''
+  max_filesize: ''
 field_type: video

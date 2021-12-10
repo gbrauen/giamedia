@@ -1,7 +1,25 @@
 uuid: e1f1e905-7b59-4d68-a492-92c96a3ce556
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.restricted_html
+    - node.type.about_contributor
+    - node.type.article
+    - node.type.page
+    - node.type.visit
+  module:
+    - administerusersbyrole
+    - comment
+    - contact
+    - file
+    - filter
+    - node
+    - publishcontent
+    - system
+    - taxonomy
+    - view_unpublished
 id: instructor
 label: Instructor
 weight: -8

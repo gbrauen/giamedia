@@ -31,14 +31,14 @@ bundle: visit
 mode: default
 content:
   body:
-    label: above
     type: text_default
-    weight: 5
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 5
     region: content
   field_audio:
-    weight: 9
+    type: audiofield_audioplayer
     label: hidden
     settings:
       audio_player: default_mp3_player
@@ -53,8 +53,10 @@ content:
       audio_player_wavesurfer_cursorwidth: 1
       audio_player_wavesurfer_forcedecode: false
       audio_player_wavesurfer_normalize: false
+      audio_player_wavesurfer_playnexttrack: true
       audio_player_wavesurfer_progresscolor: '#555'
       audio_player_wavesurfer_responsive: false
+      audio_player_wavesurfer_use_peakfile: false
       audio_player_wavesurfer_wavecolor: '#999'
       audio_player_wordpress_combine_files: false
       audio_player_wordpress_animation: true
@@ -64,53 +66,54 @@ content:
       audio_player_lazyload: false
       download_button: false
       download_link: false
-      audio_player_wavesurfer_playnexttrack: true
-      audio_player_wavesurfer_use_peakfile: false
     third_party_settings: {  }
-    type: audiofield_audioplayer
+    weight: 9
     region: content
   field_comments:
-    weight: 11
+    type: comment_default
     label: above
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    type: comment_default
+    weight: 11
     region: content
   field_date:
     type: datetime_custom
-    weight: 1
-    region: content
     label: inline
     settings:
       timezone_override: ''
       date_format: 'M. d, Y '
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_file_s_:
-    weight: 6
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 6
     region: content
   field_location:
-    weight: 10
+    type: leaflet_formatter_default
     label: hidden
     settings:
       multiple_map: false
-      popup_content: ''
       leaflet_map: 'OSM Mapnik'
       height: 400
       height_unit: px
       hide_empty_map: true
       disable_wheel: true
       fullscreen_control: true
+      gesture_handling: false
       reset_map:
-        position: topright
         control: false
+        position: topright
+      popup: false
+      popup_content: ''
       map_position:
+        force: false
         center:
           lat: !!float 0
           lon: !!float 0
@@ -118,16 +121,12 @@ content:
         minZoom: 1
         maxZoom: 18
         zoomFiner: 0
-        force: false
       weight: ''
       icon:
         iconType: marker
         iconUrl: ''
         shadowUrl: ''
         className: ''
-        html: '<div></div>'
-        html_class: leaflet-map-divicon
-        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
         iconSize:
           x: ''
           'y': ''
@@ -143,12 +142,13 @@ content:
         popupAnchor:
           x: ''
           'y': ''
-      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
-      popup: false
-      gesture_handling: false
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
       leaflet_markercluster:
         control: false
         options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2"}'
       geocoder:
         control: false
         settings:
@@ -161,50 +161,50 @@ content:
           popup: false
           options: ''
     third_party_settings: {  }
-    type: leaflet_formatter_default
+    weight: 10
     region: content
   field_location_indication_type:
     type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 4
     region: content
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
   field_photos:
     type: image
-    weight: 7
-    region: content
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
+    weight: 7
+    region: content
   field_summary_keywords:
     type: entity_reference_label
-    weight: 2
-    region: content
     label: inline
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_video:
-    weight: 8
+    type: video_player
     label: hidden
     settings:
-      width: '854'
-      height: '480'
       controls: true
       autoplay: false
       loop: false
       muted: false
+      width: '854'
+      height: '480'
       preload: none
     third_party_settings: {  }
-    type: video_player
+    weight: 8
     region: content
   links:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden: {  }

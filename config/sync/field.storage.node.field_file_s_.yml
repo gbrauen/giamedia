@@ -10,10 +10,10 @@ field_name: field_file_s_
 entity_type: node
 type: file
 settings:
+  target_type: file
   display_field: true
   display_default: true
   uri_scheme: private
-  target_type: file
 module: file
 locked: false
 cardinality: -1

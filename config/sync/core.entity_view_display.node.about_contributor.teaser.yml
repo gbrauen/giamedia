@@ -15,12 +15,12 @@ bundle: about_contributor
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 0
+    label: hidden
     settings:
       trim_length: 300
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   links: true

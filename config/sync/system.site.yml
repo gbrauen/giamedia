@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
 uuid: d04ebf85-ddb9-455b-ae1f-37e0375a4c37
 name: 'Geographic Information Annotation and Media (GIAMedia): demo'
 mail: YOUREMAIL@DOMAIN.TLD
@@ -8,8 +11,5 @@ page:
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
 mail_notification: NOTIFICATIONEMAIL@DOMAIN.TLD
