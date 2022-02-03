@@ -35,7 +35,7 @@
         "drupal/node_edit_protection": "^1.0",
         "drupal/publishcontent": "^1.4",
         "drupal/token": "^1.10",
-        "drupal/transliterate_filenames": "^1.6",
+        "drupal/transliterate_filenames": "^1.7",
         "drupal/video": "^1.5@alpha",
         "drupal/view_unpublished": "^1.0",
         "drupal/views_geojson": "^1.1",
@@ -51,7 +51,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "extra": {

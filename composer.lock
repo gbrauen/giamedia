@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad789a227a69eefeac740af717f4c6c7",
+    "content-hash": "e71da212ddef0cda4b22801825a7a363",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2629,26 +2629,26 @@
         },
         {
             "name": "drupal/transliterate_filenames",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/transliterate_filenames.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/transliterate_filenames-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "5841c091016a1e34b7b7b72f52de7a1645933194"
+                "url": "https://ftp.drupal.org/files/projects/transliterate_filenames-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "c7661a46cc811d4371e58b4fd48551833cbbb76f"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^9.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1642662297",
+                    "version": "8.x-1.7",
+                    "datestamp": "1643875509",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11331,5 +11331,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
