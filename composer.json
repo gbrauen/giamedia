@@ -20,7 +20,7 @@
         "drupal/audiofield": "^1.11",
         "drupal/auditfiles": "^2.11",
         "drupal/auto_entitylabel": "^3.0@beta",
-        "drupal/colorbox": "^1.7",
+        "drupal/colorbox": "^1.8",
         "drupal/core": "^9.0.0",
         "drupal/core-composer-scaffold": "^9.0.0",
         "drupal/core-project-message": "^9.0.0",
