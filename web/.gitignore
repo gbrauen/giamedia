@@ -20,7 +20,8 @@
 /modules/contrib/
 /themes/contrib/
 /profiles/contrib/
-/libraries/
+#/libraries/
+/sites/
 
 # moved to root .gitignore file
 # # Ignore dependencies that are managed with Composer.
@@ -57,6 +58,7 @@ sites/simpletest
 /.ht.router.php
 /.htaccess
 /INSTALL.txt
+/README.md
 /README.txt
 /autoload.php
 /example.gitignore
