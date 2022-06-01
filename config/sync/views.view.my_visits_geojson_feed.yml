@@ -416,7 +416,7 @@ display:
           specify_validation: true
           validate:
             type: 'entity:user'
-            fail: 'not found'
+            fail: 'access denied'
           validate_options:
             access: true
             operation: update
@@ -457,7 +457,6 @@ display:
           height_unit: px
           hide_empty_map: true
           disable_wheel: false
-          fullscreen_control: false
           gesture_handling: false
           reset_map:
             control: false
@@ -498,8 +497,9 @@ display:
           leaflet_markercluster:
             control: true
             options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds":false}'
-            include_path: 1
+            include_path: true
           path: '{"opacity":"1.0","stroke":"true","fill":"depends","radius":"8","color":"#8b0028","fillColor":"#ec5c85","fillOpacity":1,"weight":6}'
+          fullscreen_control: false
       row:
         type: fields
         options:

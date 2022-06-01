@@ -304,6 +304,13 @@
                 // but probably reduces unnecessary scrolling overall.
                 map.setView([46.5, -84.346944], 11);
             };
-        });
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+	    if (jqXHR.status == 403) {
+               $('#' + mapDivId).empty().removeClass().text("No access to another user's work.");
+	       return;
+	    };
+            $('#' + mapDivId).empty().removeClass().text("Unknown error: " + status);
+            return;
+	});
     }
 })(jQuery);
