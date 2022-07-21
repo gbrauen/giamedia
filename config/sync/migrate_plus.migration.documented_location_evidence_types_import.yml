@@ -13,7 +13,7 @@ source:
   constants:
     uid: 1
   plugin: csv
-  path: <path-to-csv-file>
+  path: '<path-to-csv-file>'
   delimiter: ','
   enclosure: '"'
   header_row_count: 1

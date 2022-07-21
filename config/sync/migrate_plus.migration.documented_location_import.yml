@@ -14,7 +14,7 @@ source:
     dest_path: 'private://example_download_location_images/'
     uid: 1
   plugin: csv
-  path: <path-to-csv-file>
+  path: '<path-to-csv-file>'
   delimiter: ','
   enclosure: '"'
   header_row_count: 1
