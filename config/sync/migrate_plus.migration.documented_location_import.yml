@@ -14,7 +14,7 @@ source:
     dest_path: 'private://example_download_location_images/'
     uid: 1
   plugin: csv
-  path: /home/glenn/Desktop/DA_housingDensity_Evidence/dl_csv_export.csv
+  path: <path-to-csv-file>
   delimiter: ','
   enclosure: '"'
   header_row_count: 1

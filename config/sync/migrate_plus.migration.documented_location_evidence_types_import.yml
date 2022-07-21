@@ -13,7 +13,7 @@ source:
   constants:
     uid: 1
   plugin: csv
-  path: /home/glenn/Desktop/DA_housingDensity_Evidence/dlet_export.csv
+  path: <path-to-csv-file>
   delimiter: ','
   enclosure: '"'
   header_row_count: 1

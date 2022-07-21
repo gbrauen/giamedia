@@ -13,7 +13,7 @@ source:
   constants:
     uid: 1
   plugin: csv
-  path: /home/glenn/Desktop/drupal_dev_kgo_busi_net/scarborough_da.csv
+  path: <path-to-csv-file>
   delimiter: ','
   enclosure: '"'
   header_row_count: 1
