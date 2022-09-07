@@ -107,7 +107,6 @@ content:
       height_unit: px
       hide_empty_map: true
       disable_wheel: true
-      fullscreen_control: true
       gesture_handling: false
       reset_map:
         control: false
@@ -123,7 +122,6 @@ content:
         minZoom: 1
         maxZoom: 18
         zoomFiner: 0
-      weight: ''
       icon:
         iconType: marker
         iconUrl: ''
@@ -162,6 +160,8 @@ content:
           zoom: 16
           popup: false
           options: ''
+      fullscreen_control: true
+      weight: ''
     third_party_settings: {  }
     weight: 10
     region: content

@@ -13,7 +13,7 @@ dependencies:
 id: mapblock2
 theme: mappy
 region: content
-weight: 0
+weight: -3
 provider: null
 plugin: 'block_content:18b39a92-0bb9-4b2a-8602-762b76aa3b7f'
 settings:
