@@ -12,6 +12,7 @@
     font-family: Georgia,"Times New Roman",Times,serif;
 }
 .field--type-entity-reference .field__label {
+    margin:3px 0px 0px 0px;
     font-weight: bold;
 }
 .field__items .field__item {
