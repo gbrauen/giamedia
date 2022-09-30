@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
-        "drupal/administerusersbyrole": "^3.0",
+        "drupal/administerusersbyrole": "^3.2",
         "drupal/audiofield": "^1.11",
         "drupal/auditfiles": "^2.11",
         "drupal/auto_entitylabel": "^3.0@beta",
@@ -26,7 +26,7 @@
         "drupal/core-project-message": "^9.0.0",
         "drupal/core-recommended": "^9.0.0",
         "drupal/exif_orientation": "^1.1",
-        "drupal/geofield": "^1.39",
+        "drupal/geofield": "^1.44",
         "drupal/leaflet": "^2.2",
         "drupal/migrate_file": "^2.1",
         "drupal/migrate_plus": "^6.0",
@@ -34,11 +34,11 @@
         "drupal/migrate_tools": "^6.0",
         "drupal/node_edit_protection": "^1.0",
         "drupal/publishcontent": "^1.5",
-        "drupal/token": "^1.10",
+        "drupal/token": "^1.11",
         "drupal/transliterate_filenames": "^2.0",
         "drupal/video": "^1.5@alpha",
         "drupal/view_unpublished": "^1.0",
-        "drupal/views_geojson": "^1.1",
+        "drupal/views_geojson": "^1.2",
         "drush/drush": "^10.2"
     },
     "conflict": {

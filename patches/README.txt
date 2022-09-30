@@ -11,6 +11,6 @@ Note that the patch file name should contain the Drupal issue number. You can ch
 Patch explanation:
 
 - If using videos as one type of uploaded media, as the GIAMedia demo site does, then patch the video module. Otherwise it will install and seem to work, allowing video file uploads, but uploaded videos will not display properly.
-- If using locations for the system map that contain polylines or polygons, then you may need to apply the patch for views_geojson as well. This allows the views software that generates the GeoJSON for the geometry layer to properly filter layer features using a bouonding box that matches the map viewport. Without this fix, some features that should be on the map may be erroneously excluded from the map.
+- If using locations for the system map that contain polylines or polygons, then you may need to apply the patch for views_geojson as well. This allows the views software that generates the GeoJSON for the geometry layer to properly filter layer features using a bounding box that matches the map viewport. Without this fix, some features that should be on the map may be erroneously excluded from the map.
 
-Last checked: May 2022
+Last checked: Sept 2022
