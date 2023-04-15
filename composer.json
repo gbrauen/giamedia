@@ -17,7 +17,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/administerusersbyrole": "^3.3",
-        "drupal/audiofield": "^1.12",
+        "drupal/audiofield": "^1.13",
         "drupal/auditfiles": "^2.11",
         "drupal/auto_entitylabel": "^3.0",
         "drupal/colorbox": "^1.10",

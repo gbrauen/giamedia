@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b84e7cecdbcc17f610e15f5c940cbf0d",
+    "content-hash": "f0d34b3045bbc2f25c54c0f4af193086",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1282,26 +1282,26 @@
         },
         {
             "name": "drupal/audiofield",
-            "version": "1.12.0",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/audiofield.git",
-                "reference": "8.x-1.12"
+                "reference": "8.x-1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/audiofield-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "d11acd81a369f11009512c1ef2f5481723475782"
+                "url": "https://ftp.drupal.org/files/projects/audiofield-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "85bb66d231b2f961728b559351d5dfd155b2c78c"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1665769895",
+                    "version": "8.x-1.13",
+                    "datestamp": "1681143245",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1322,10 +1322,6 @@
                     "name": "Daniel Moberly",
                     "homepage": "https://www.drupal.org/u/danielmoberly",
                     "role": "Maintainer"
-                },
-                {
-                    "name": "josipsaric",
-                    "homepage": "https://www.drupal.org/user/3063287"
                 },
                 {
                     "name": "tamerzg",
@@ -2010,17 +2006,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.0.11",
+            "version": "10.0.12",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.0.11"
+                "reference": "10.0.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.0.11.zip",
-                "reference": "10.0.11",
-                "shasum": "c6fc3be31273d4cf67ccd6c9b8f42828415f765c"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.0.12.zip",
+                "reference": "10.0.12",
+                "shasum": "94612aff0e1bee28ad8d936393e30a223b0476e6"
             },
             "require": {
                 "drupal/core": "^9 || ^10",
@@ -2029,8 +2025,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.11",
-                    "datestamp": "1679700067",
+                    "version": "10.0.12",
+                    "datestamp": "1681511192",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
